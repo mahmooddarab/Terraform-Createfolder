@@ -18,7 +18,7 @@ data "vsphere_datacenter" "Datacenter" {
 }
 
 resource "vsphere_folder" "parrent" {
-  path = "VM_NAME"
+  path = "Folder_Name"
   type = "vm"
   datacenter_id = data.vsphere_datacenter.Datacenter.id
 }
